@@ -11,14 +11,18 @@
 
 		<title>Adeline's Camino de Santiago</title>
 	</head>
-	<body>
+	<body">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">Franch Way</a>
+				<a class="navbar-brand mx-auto" href="#">French Way</a>
 			</nav>
 			<div class="row">
 				<div class="col">
-					<img src="images/north-spain-map.png" class="img-fluid" alt="Map of north Spain">
+					<svg style="background: url('images/north-spain-map.png');width: 100%; height: 50vh">
+					<!-- <img src="images/north-spain-map.png" class="img-fluid" alt="Map of north Spain"> -->
+						<path id="pathday1" class="path" fill="none" stroke="red" stroke-width="3" d="M1311.54,307.65c-7.41,16.56-11.39,23-13.66,25.2-.44.43-2.28,2.13-1.92,3.84.32,1.55,2.17,1.76,2.83,3.1s.12,3.73-4.35,8.47" transform="translate(15 -162)"/>
+						<path id="pathday2" class="path" fill="none" stroke="red" stroke-width="3" d="M1294.44,348a11.76,11.76,0,0,0-5.89.21c-6,1.86-7.82,8.39-11.35,7.94-.76-.1-1.9-.54-3.14-2.48" transform="translate(15 -162)"/>
+					</svg>
 				</div>
 			</div>
 			<div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
@@ -68,5 +72,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="frenchway.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
   </body>
 </html>
